@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    max-width: 1200px; /* Adjust max width as needed */
+}
+
+.left-pane {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-pane {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input, .output {
+    flex: 1;
+    margin-bottom: 10px;
+    resize: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+#testForm button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+    align-self: center;
+}
+#additionalInput {
+    height: 10%;
+    width: 100%;
+    resize: none;
+}
+
+#testForm button:hover {
+    background-color: #0056b3;
+}
+
+.output {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+#generateTestsButton:disabled, 
+#generateTestsButton:disabled:hover {
+    background-color: #cccccc; /* Gray background */
+    color: #666666; /* Darker text to indicate it's disabled */
+    cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+    border: 1px solid #aaaaaa; /* Optional: Add a border color if needed */
+}

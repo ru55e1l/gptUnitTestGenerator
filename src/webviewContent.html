@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Test Generator</title>
+    <link href="{{basePath}}/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="layout">
+        <form id="testForm" class="left-pane">
+            <textarea class="input" id="constructorInput" placeholder="Enter Class Constructor">{{constructorInput}}</textarea>
+            <textarea class="input" id="functionInput" placeholder="Enter Function">{{functionInput}}</textarea>
+            <textarea id="additionalInput" placeholder="Enter any additional input">{{additionalInput}}</textarea>
+            <button id="generateTestsButton" type="submit">Generate Tests</button>
+        </form>
+        <div class="right-pane">
+            <textarea class="output" id="responseOutput" placeholder="GPT API Response" readonly></textarea>
+        </div>
+    </div>
+    <script src="{{basePath}}/script.js"></script>
+</body>
+</html>
