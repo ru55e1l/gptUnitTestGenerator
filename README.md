@@ -6,9 +6,8 @@ This extension for Visual Studio Code leverages the OpenAI GPT API to automate t
 ## Experiment Data
 The extension has been evaluated with .NET, JavaScript, and Java, showing promising results:
 
-- **.NET**: Mean compile success of 95.33%, with a median of 100%. Line coverage mean at 83.33%, and a median of 100%.
-- **JavaScript**: 100% success rate in test compilation and line coverage across 10 different functions.
-- **Java**: Successfully created tests for HW4 Java files, including bug detection, with 100% line coverage.
+- **.NET**: 10 tests were done with mean compile success of 95.33%, with a median of 100%. Line coverage mean at 83.33%, and a median of 100%.
+- **JavaScript**: 10 tests were done with 100% success rate in test compilation and line coverage across 10 different functions.
 
 For detailed graphs and further data, refer to the comments in the code or the designated sections marked as [insert graph here].
 
