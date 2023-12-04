@@ -1,47 +1,47 @@
-# Cat Coding — A Webview API Sample
+# Unit Test Generator Extension for Visual Studio Code
 
-Demonstrates VS Code's [webview API](https://code.visualstudio.com/api/extension-guides/webview). This includes:
+## Overview
+This extension for Visual Studio Code leverages the OpenAI GPT API to automate the generation of unit tests, aiming to enhance developer efficiency by reducing the time spent on manual test creation. It supports multiple programming languages and ensures high coverage for unit tests.
 
-- Creating and showing a basic webview.
-- Dynamically updating a webview's content.
-- Loading local content in a webview.
-- Running scripts in a webview.
-- Sending message from an extension to a webview.
-- Sending messages from a webview to an extension.
-- Using a basic content security policy.
-- Webview lifecycle and handling dispose.
-- Saving and restoring state when the panel goes into the background.
-- Serialization and persistence across VS Code reboots.
+## Experiment Data
+The extension has been evaluated with .NET, JavaScript, and Java, showing promising results:
 
-## Demo
+- **.NET**: Mean compile success of 95.33%, with a median of 100%. Line coverage mean at 83.33%, and a median of 100%.
+- **JavaScript**: 100% success rate in test compilation and line coverage across 10 different functions.
+- **Java**: Successfully created tests for HW4 Java files, including bug detection, with 100% line coverage.
 
-![demo](demo.gif)
+For detailed graphs and further data, refer to the comments in the code or the designated sections marked as [insert graph here].
 
-## VS Code API
+## Installation
 
-### `vscode` module
+1. Clone the repository from the provided GitHub link.
+2. Navigate to the cloned directory.
 
-- [`window.createWebviewPanel`](https://code.visualstudio.com/api/references/vscode-api#window.createWebviewPanel)
-- [`window.registerWebviewPanelSerializer`](https://code.visualstudio.com/api/references/vscode-api#window.registerWebviewPanelSerializer)
+## Configuration
 
-## Running the example
+Before using the extension, you need to set up an environment variable for the OpenAI API key:
 
-- Open this example in VS Code 1.47+
-- `npm install`
-- `npm run watch` or `npm run compile`
-- `F5` to start debugging
+1. Create a `.env` file in the root of the project.
+2. Add the following line to the `.env` file:
+OPENAI_KEY=your_openai_api_key_here
 
-Run the `Cat Coding: Start cat coding session` to create the webview.
+Replace `your_openai_api_key_here` with your actual OpenAI API key.
 
-## Commands
+## Usage
 
-This extension provides the following commands:
+To use the extension within Visual Studio Code:
 
-- `Cat Coding: Start cat coding session`: Creates and displays the Cat Coding webview.
-- `Cat Coding: Do refactor`: Halves the count of lines of code displayed in the Cat Coding webview.
+1. Open the command palette (Ctrl+Shift+P or Cmd+Shift+P on Mac).
+2. Run the command `extension.generateUnitTest`.
+3. A webview panel will open where you can input the class constructor, function, and any additional information.
+4. Click the `Generate Tests` button to receive generated unit tests.
 
-## Messages
+## Running Experiments
 
-The Cat Coding webview can send the following messages to the extension:
+To reproduce the experiment results:
 
-- `alert`: Sent when the cat introduces a bug. The message includes the text '🐛  on line ' followed by the current line count.
+1. Provide the necessary constructor, function, and additional information (like and user defined classes' constructors) in the webview panel inputs.
+2. Use the `Generate Tests` function to create unit tests.
+3. Compare the generated tests with the experiment data provided.
+
+
