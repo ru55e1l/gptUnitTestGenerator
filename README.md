@@ -9,7 +9,6 @@ The extension has been evaluated with .NET, JavaScript, and Java, showing promis
 - **.NET**: 10 tests were done with mean compile success of 95.33%, with a median of 100%. Line coverage mean at 83.33%, and a median of 100%.
 - **JavaScript**: 10 tests were done with 100% success rate in test compilation and line coverage across 10 different functions.
 
-For detailed graphs and further data, refer to the comments in the code or the designated sections marked as [insert graph here].
 
 ## Installation
 
