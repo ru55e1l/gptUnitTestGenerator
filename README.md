@@ -8,6 +8,10 @@ The extension has been evaluated with .NET, JavaScript, and Java, showing promis
 
 - **.NET**: 10 tests were done with mean compile success of 95.33%, with a median of 100%. Line coverage mean at 83.33%, and a median of 100%.
 - **JavaScript**: 10 tests were done with 100% success rate in test compilation and line coverage across 10 different functions.
+- **Java**: 12 tests were done with 100% success rate in test compilation and line coverage across 10 different functions.
+![alt text](https://media.discordapp.net/attachments/910023407515611170/1181717005196337202/image.png?ex=658212b9&is=656f9db9&hm=8b5434da48cc4c94ac65df0f5b14bb21298848e2994712bfad274bd985b6628c&=&format=webp&quality=lossless&width=513&height=308)
+![alt text](https://cdn.discordapp.com/attachments/910023407515611170/1181717047642685460/image.png?ex=658212c3&is=656f9dc3&hm=480b42e9e6cfd17625449e96130663425675e5c42ad65ba93e553852981d9b79&)
+![alt text](https://cdn.discordapp.com/attachments/910023407515611170/1181717083634012191/image.png?ex=658212cb&is=656f9dcb&hm=9cecc240f54f285b6e90cda1feabf55a9d81035e7f57e2aff5768222b8f2d170&)
 
 
 ## Installation
